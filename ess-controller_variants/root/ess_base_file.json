@@ -1,0 +1,11 @@
+{
+    "stuff": {
+        "more_stuff": {
+            "even_more_stuff": [
+                "{{connection}}"
+            ],
+            "other_stuff": "{{Virtual_ID}}"
+        }
+    },
+    "site_id": "{{SITE_ID}}"
+}

@@ -1,0 +1,31 @@
+{
+    "fleet_electricity": {
+        "voltage": "120V",
+        "current": "15A",
+        "frequency": "60Hz",
+        "power": "1800W",
+        "source": "{{SPECIAL_IP}}",
+        "generation_method": "Coal",
+        "provider": "ABC Electric",
+        "outage": false,
+        "connected_devices": [
+            {
+                "device_name": "sc-{{SITE_ID}}_1",
+                "power_usage": "150W"
+            },
+            {
+                "device_name": "ess-{{SITE_ID}}_1",
+                "power_usage": "100W"
+            },
+            {
+                "device_name": "twins_1",
+                "power_usage": "1200W"
+            }
+        ]
+    }
+}
+
+
+
+
+

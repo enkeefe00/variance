@@ -1,0 +1,14 @@
+{
+    "site_controller_1": {
+        "running": true,
+        "replacements": {
+            "sc": "site_controller",
+            "SC": "Site Controller"
+        },
+        "ips": [
+            "{{SPECIAL_IP}}",
+            "2.2.2.2",
+            "3.3.3.3"
+        ]
+    }
+}

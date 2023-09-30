@@ -1,0 +1,38 @@
+{
+    "server_01":
+        {
+            "server_name": "WebServer-01",
+            "ip_address": "192.168.1.100",
+            "status": "Online",
+            "cpu_usage_percent": 12.5
+        },
+    "server_02":
+        {
+            "server_name": "AppServer-01",
+            "ip_address": "192.168.1.101",
+            "status": "Online",
+            "cpu_usage_percent": 8.2,
+            "extra_field": "{{LOWER_MAX}}"
+        },
+    "server_03":
+        {
+            "server_name": "DBServer-01",
+            "ip_address": "192.168.1.102",
+            "status": "Online",
+            "cpu_usage_percent": 32.1
+        },
+    "server_04":
+        {
+            "server_name": "BackupServer-01",
+            "ip_address": "192.168.1.103",
+            "status": "Offline",
+            "cpu_usage_percent": null
+        },
+    "server_05":
+        {
+            "server_name": "EmailServer-01",
+            "ip_address": "192.168.1.104",
+            "status": "Online",
+            "cpu_usage_percent": 15.7
+        }
+}

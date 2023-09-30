@@ -1,0 +1,32 @@
+{
+    "lion_data": [
+        {
+            "species": "Lion",
+            "name": "Simba",
+            "age": 5,
+            "gender": "Male",
+            "habitat": "Savannah",
+            "weight_kg": 180
+        },
+        {
+            "species": "Lion",
+            "name": "Nala",
+            "age": 4,
+            "gender": "Female",
+            "habitat": "Savannah",
+            "weight_kg": 160
+        },
+        {
+            "species": "Lion",
+            "name": "Mufasa",
+            "age": 10,
+            "gender": "Male",
+            "habitat": "Savannah",
+            "weight_kg": "{{HIGHER_MAX}}"
+        }
+    ],
+    "server": 11,
+    "ip_address": "{{SPECIAL_IP}}",
+    "site_name": "{{SITE_NAME}}",
+    "{{SITE_ID}}_running": false
+}

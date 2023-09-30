@@ -1,0 +1,14 @@
+{
+    "big_list": [
+        "this",
+        "should",
+        "not",
+        "change", 
+        "except",
+        "for",
+        "the",
+        "EMC",
+        "id."
+    ],
+    "{{EMC_ID}}-on": true
+}

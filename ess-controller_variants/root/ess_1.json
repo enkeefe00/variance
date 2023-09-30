@@ -1,0 +1,125 @@
+{
+    "ip": "{{SPECIAL_IP}}",
+    "random": [
+        {
+            "name": "XaLcV",
+            "age": 30,
+            "city": "QwCgYxEp",
+            "is_student": false
+        },
+        {
+            "name": "yBkEi",
+            "age": 42,
+            "city": "LsHvZaRw",
+            "is_student": true
+        },
+        {
+            "name": "zUdOp",
+            "age": 22,
+            "city": "PfKjRvSx",
+            "is_student": true
+        },
+        {
+            "name": "vHfNc",
+            "age": 28,
+            "city": "wGxHb",
+            "is_student": false
+        },
+        {
+            "name": "gAeUf",
+            "age": 47,
+            "city": "nYpBsRiA",
+            "is_student": true
+        },
+        {
+            "name": "mDpKo",
+            "age": 35,
+            "city": "bQwRlFgT",
+            "is_student": false
+        },
+        {
+            "name": "yFwDd",
+            "age": 19,
+            "city": "cJrXqKz",
+            "is_student": false
+        },
+        {
+            "name": "aTmJz",
+            "age": 50,
+            "city": "eIwZfY",
+            "is_student": false
+        },
+        {
+            "name": "qUoXr",
+            "age": 27,
+            "city": "lGpHsTq",
+            "is_student": true
+        },
+        {
+            "name": "oYpAv",
+            "age": 25,
+            "city": "sTdKmPn",
+            "is_student": true
+        },
+        {
+            "name": "vBdGe",
+            "age": 37,
+            "city": "yUpNwQz",
+            "is_student": false
+        },
+        {
+            "name": "bLzHo",
+            "age": 20,
+            "city": "cRiJyU",
+            "is_student": false
+        },
+        {
+            "name": "sEpBk",
+            "age": 38,
+            "city": "tHlMoAq",
+            "is_student": true
+        },
+        {
+            "name": "wMlVi",
+            "age": 41,
+            "city": "mTqQpEo",
+            "is_student": true
+        },
+        {
+            "name": "nFgQp",
+            "age": 52,
+            "city": "kPzVmWl",
+            "is_student": false
+        },
+        {
+            "name": "tXrWo",
+            "age": 45,
+            "city": "iGwKdO",
+            "is_student": true
+        },
+        {
+            "name": "rVzBc",
+            "age": 39,
+            "city": "gNjZeDq",
+            "is_student": false
+        },
+        {
+            "name": "sQxLy",
+            "age": 49,
+            "city": "dYbZtNf",
+            "is_student": true
+        },
+        {
+            "name": "uWfPo",
+            "age": 23,
+            "city": "xMzRfEw",
+            "is_student": false
+        },
+        {
+            "name": "pHkSg",
+            "age": 34,
+            "city": "zOaHiX",
+            "is_student": true
+        }
+    ]
+}

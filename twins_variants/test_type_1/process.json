@@ -1,0 +1,36 @@
+{
+    "web_processes": [
+        {
+            "process_id": 12345,
+            "process_name": "WebServer-01",
+            "status": "Running",
+            "cpu_usage_percent": 12.5,
+            "memory_usage_mb": 256,
+            "uptime_seconds": 86400
+        },
+        {
+            "process_id": 67890,
+            "process_name": "WebServer-02",
+            "status": "Running",
+            "cpu_usage_percent": 8.2,
+            "memory_usage_mb": 192,
+            "uptime_seconds": 72000
+        },
+        {
+            "process_id": 54321,
+            "process_name": "DatabaseServer-01",
+            "status": "Running",
+            "cpu_usage_percent": 32.1,
+            "memory_usage_mb": 512,
+            "uptime_seconds": 129600
+        },
+        {
+            "process_id": 98765,
+            "process_name": "CacheServer-01",
+            "status": "Stopped",
+            "cpu_usage_percent": 0.0,
+            "memory_usage_mb": 64,
+            "uptime_seconds": 0
+        }
+    ]
+}

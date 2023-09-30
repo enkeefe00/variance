@@ -1,0 +1,16 @@
+{
+    "lion_data": [
+        {
+            "species": "Lion",
+            "name": "Simba",
+            "age": 5,
+            "gender": "Male",
+            "habitat": "Savannah",
+            "weight_kg": 180
+        }
+    ],
+    "server": 11,
+    "ip_address": "1.2.3.4",
+    "site_name": "{{EMC_NAME}}",
+    "{{EMC_ID}}_running": true
+}

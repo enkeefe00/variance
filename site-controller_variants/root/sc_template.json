@@ -1,0 +1,12 @@
+{
+    "id": "{{SC_ID}}",
+    "connection": {
+        "port": 8080,
+        "method": "MQTT",
+        "ip_address": "10.10.10.{{SC_IP_SEGMENT}}"
+    },
+    "components": [
+        "{{FIRST_COMPONENT}}",
+        "site_controller_{{SECOND_COMPONENT}}"
+    ]
+}
