@@ -1,5 +1,0 @@
-version: 11.1.0.beta.8
-modbus_client:
-  virtual_bms_1_ess_modbus_client.json:
-    - ip:  four_county-ess-controller-01
-      port: 502
