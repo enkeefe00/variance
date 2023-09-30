@@ -1,0 +1,22 @@
+{
+    "fileInfo": {
+        "sourceFileName": "ncemc_flexgen_ess_modbus_map_v2.xlsx",
+        "sourceFileCreated": "2019-10-06T17:35:21.000Z",
+        "sourceFileLastModified": "2022-10-18T17:21:38.000Z",
+        "sourceFileCreatedBy": "Tony Olivo",
+        "sourceFileLastModifiedBy": "Justin Wald",
+        "outputFileName": "flexgen_ess_ess_{{ESS_ID}}_modbus_client.json",
+        "outputFileType": "client",
+        "outputFileCreated": "2022-10-18T17:21:53.879Z"
+    },
+    "connection": {
+        "name": "FlexGen ESS Controller",
+        "device protocol": "Modbus TCP",
+        "device protocol version": "6.0 WIP",
+        "device name": "ess-controller_site-controller_ess_{{ESS_ID}}",
+        "device id string": "ess-controller_site-controller_ess_{{ESS_ID}}",
+        "ip_address": "{{ESS_IP}}",
+        "port": 502,
+        "data bits (8 typical)": "Columns marked in green are REQUIRED"
+    }
+}

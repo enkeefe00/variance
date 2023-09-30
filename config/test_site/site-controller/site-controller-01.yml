@@ -1,0 +1,17 @@
+version: 11.1.0.beta.12
+modbus_client:
+  ess-controller_site-controller_flexgen-1_modbus_client.json:
+    ip:  192.168.114.11
+    port: 502
+  ess-controller_site-controller_flexgen-2_modbus_client.json:
+    ip:  192.168.114.12
+    port: 502
+  acromag_site-controller_vendor_modbus_client.json:
+    ip:  192.168.114.25
+    port: 502
+  acuvim_site-controller_vendor_modbus_client.json:
+    ip:  10.101.81.54
+    port: 502
+  rtac_site-controller_customer_dnp3_client.json:
+    ip:  10.101.81.56
+    port: 20001

@@ -1,0 +1,198 @@
+{
+    "db_name": "ncemc_{{SITE_ID}}_ess_controller_1-2",
+    "period" : 300,
+    "num_archive_workers": 1,
+    "archive": "/home/hybridos/powercloud/outbox",
+    "uris": [
+        {
+            "uri": "/site",
+            "sources":
+            [
+                "ess_1_ls", "ess_2_ls"
+            ],
+            "group": "site_ess_ls_group",
+            "destination": "influx",
+            "measurement": "ec_site_ess_ls"
+        },
+        {
+            "uri": "/site",
+            "sources":
+            [
+                "ess_1_hs", "ess_2_hs"
+            ],
+            "group": "site_ess_hs_group",
+            "destination": "influx",
+            "measurement": "ec_site_ess_hs"
+        },
+        {
+            "uri": "/assets/ess",
+            "group": "assets_ess_group",
+            "destination": "influx",
+            "measurement": "ec_assets_ess"
+        },
+        {
+            "uri": "/assets/pcs",
+            "group": "assets_pcs_group",
+            "destination": "influx",
+            "measurement": "ec_assets_pcs"
+        },
+        {
+            "uri": "/assets/bms",
+            "group": "assets_bms_group",
+            "destination": "influx",
+            "measurement": "ec_assets_bms"
+        },
+        {
+            "uri": "/assets/bms_1",
+            "group": "assets_bms_1_racks_group",
+            "destination": "influx",
+            "measurement": "ec_assets_bms_1_racks"
+        },
+        {
+            "uri": "/assets/bms_2",
+            "group": "assets_bms_2_racks_group",
+            "destination": "influx",
+            "measurement": "ec_assets_bms_2_racks"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                    "bms_1_rack_1",
+                    "bms_1_rack_2",
+                    "bms_1_rack_3",
+                    "bms_1_rack_4",
+                    "bms_1_rack_5",
+                    "bms_1_rack_6",
+                    "bms_1_rack_7",
+                    "bms_1_rack_8",
+                    "bms_1_rack_9",
+                    "bms_1_rack_10"
+            ],
+            "group": "{{SITE_ID}}_bms_1_racks_group",
+            "destination": "influx",
+            "measurement": "ec_components_bms_1_racks"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                    "bms_2_rack_##INCLUSION##",
+                    "bms_2_rack_2",
+                    "bms_2_rack_3",
+                    "bms_2_rack_4",
+                    "bms_2_rack_5",
+                    "bms_2_rack_6",
+                    "bms_2_rack_7",
+                    "bms_2_rack_8",
+                    "bms_2_rack_9",
+                    "bms_2_rack_10"
+            ],
+            "group": "components_bms_2_racks_group",
+            "destination": "influx",
+            "measurement": "ec_components_bms_2_racks"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                "bms_1_info"
+            ],
+            "destination": "influx",
+            "measurement": "ec_components_bms_1_info"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                "bms_2_info"
+            ],
+            "destination": "influx",
+            "measurement": "ec_components_bms_2_info"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                "bms_1_controls"
+            ],
+            "destination": "influx",
+            "measurement": "ec_components_bms_1_controls"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                "bms_2_controls"
+            ],
+            "destination": "##INCLUSION##",
+            "measurement": "ec_components_bms_2_controls"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                "pcs_1_info"
+            ],
+            "destination": "influx",
+            "measurement": "ec_components_{{SITE_ID}}__pcs_1_info"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                "pcs_2_info"
+            ],
+            "destination": "influx",
+            "measurement": "ec_components_pcs_2_info"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                "{{DNE}}"
+            ],
+            "destination": "influx",
+            "measurement": "ec_components_pcs_1_control"
+        },
+        {
+            "uri": "/components",
+            "sources":
+            [
+                "pcs_2_control"
+            ],
+            "destination": "influx",
+            "measurement": "ec_components_pcs_2_control"
+        },
+        {
+            "uri": "/systemstats/cpu",
+            "destination": "influx",
+            "measurement": "ec_cpu_##INCLUSION##"
+        },
+        {
+            "uri": "/systemstats/mem",
+            "destination": "influx",
+            "measurement": "ec_memstats"
+        },
+        {
+            "uri": "/##INCLUSION##/net",
+            "destination": "influx",
+            "measurement": "ec_netstats"
+        },
+        {
+            "uri": "/systemstats/disk",
+            "destination": "influx",
+            "measurement": "ec_diskstats"
+        },
+        {
+            "uri": "/systemstats/process",
+            "destination": "influx",
+            "measurement": "ec_processstats"
+        },
+        {
+            "uri": "/events",
+            "destination": "mongo",
+            "measurement": "ec_events"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "site": "{{SITE_ID}}",
+    "stuff": "DNE",
+    "more": {
+        "even_more": [ "##INCLUSION##", "{{TARGET}}"]
+    }
+}

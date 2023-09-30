@@ -1,0 +1,142 @@
+site-controller_variant: test_type
+twins_variant: 5000kW
+
+site-controller_templates:
+  - path: modbus_client/ess-controller_site-controller_flexgen_modbus_client.json
+    filename_pattern:
+      type: sequential
+      filename_template: ess-controller_site-controller_flexgen-{{target}}_modbus_client.json
+      from: 1
+      to: 1
+    content_replacements:
+      - target: "{{ESS_ID}}"
+      - target: "{{ESS_IP}}"
+        list:
+          - "test_site-ess-controller-01"
+      - target: "{{FIRST_ESS_COMPONENT}}"
+        list:
+          - "flexgen_ess_01"
+      - target: "{{SECOND_ESS_COMPONENT}}"
+        list:
+          - "flexgen_ess_02"
+
+ess-controller_templates:
+  - path: modbus_client/virtual_bms_ess-controller_vendor_modbus_client.json
+    filename_pattern:
+      type: sequential
+      filename_template: virtual_bms_ess-controller_vendor-{{target}}_modbus_client.json
+      from: 1
+      to: 2
+    content_replacements:
+      - target: "{{VIRTUAL_BMS_IP}}"
+        list:
+          - "brunswick-twins-01"
+          - "brunswick-twins-01"
+      - target: "\"{{VIRTUAL_BMS_PORT}}\""
+        list:
+          - "10001"
+          - "10002"
+      - target: "{{BMS_ID}}"
+
+  - path: modbus_client/bms_ess-controller_vendor_modbus_client.json
+    filename_pattern:
+      type: sequential
+      filename_template: bms_ess-controller_vendor-{{target}}_modbus_client.json
+      from: 1
+      to: 2
+    content_replacements:
+      - target: "{{BMS_IP}}"
+        list:
+          - "192.168.1.136"
+          - "192.168.1.137"
+      - target: "\"{{BMS_PORT}}\""
+        list:
+          - "10001"
+          - "10002"
+      - target: "{{BMS_ID}}"
+      
+  - path: modbus_client/pcs_ess-controller_vendor_modbus_client.json
+    filename_pattern:
+      type: sequential
+      filename_template: pcs_ess-controller_vendor-{{target}}_modbus_client.json
+      from: 1
+      to: 2
+    content_replacements:
+      - target: "{{PCS_IP}}"
+        list:
+          - "brunswick-twins-01"
+          - "brunswick-twins-01"
+      - target: "\"{{PCS_PORT}}\""
+        list:
+          - "11001"
+          - "11002"
+      - target: "{{PCS_ID}}"
+
+twins_templates:
+  - path: modbus_server/virtual_bms_ess-controller_vendor_modbus_server.json
+    filename_pattern:
+      type: sequential
+      filename_template: virtual_bms_ess-controller_vendor-{{target}}_modbus_server.json
+      from: 1
+      to: 4
+    content_replacements:
+      - target: "\"{{TWINS_BMS_PORT}}\""
+        list:
+         - "10001"
+         - "10002"
+         - "10003"
+         - "10004"
+      - target: "{{BMS_ID}}"
+
+  - path: modbus_server/pcs_ess-controller_vendor_modbus_server.json
+    filename_pattern:
+      type: sequential
+      filename_template: pcs_ess-controller_vendor-{{target}}_modbus_server.json
+      from: 1
+      to: 4
+    content_replacements:
+      - target: "\"{{TWINS_PCS_PORT}}\""
+        list:
+         - "11001"
+         - "11002"
+         - "11003"
+         - "11004"
+      - target: "{{PCS_ID}}"
+
+  - path: echo/pcs_modbus_echo.json
+    filename_pattern:
+      type: sequential
+      filename_template: pcs_{{target}}_modbus_echo.json
+      from: 1
+      to: 4
+    content_replacements:
+      - target: "{{PCS_ID}}"
+
+  - path: echo/virtual_bms_ess_modbus_echo.json
+    filename_pattern:
+      type: sequential
+      filename_template: virtual_bms_{{target}}_ess_modbus_echo.json
+      from: 1
+      to: 4
+    content_replacements:
+      - target: "{{BMS_ID}}"
+
+replacements:
+  - target: "{{SITE_ID}}"
+    value:  test_site
+  - target: "{{EMC_ID}}"
+    value:  test_emc
+  - target: "{{EMC_NAME}}"
+    value:  TEST EMC
+  - target: "{{SITE_NAME}}"
+    value:  TEST SITE
+  - target: "{{ACUVIM_IP}}"
+    value:  test_site-twins-01
+  - target: "{{RTAC_IP}}"
+    value:  test_site-twins-01
+  - target: "{{ACROMAG_IP}}"
+    value:  test_site-twins-01
+  - target: "{{ESS_ID}}"
+    value:  "1"
+  - target: "{{LOWER_ACTIVE_POI}}"
+    value: "-2500"

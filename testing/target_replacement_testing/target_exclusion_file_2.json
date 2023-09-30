@@ -1,0 +1,9 @@
+{
+    "target": ["{{TARGET}}", "tar", "get", 0],
+    "{{EXCLUSION}}": 42,
+    "deep_stuff": [
+        [
+            {"{{SITE_ID}}": "site_id"}
+        ]
+    ]
+}

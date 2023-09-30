@@ -1,0 +1,7 @@
+{
+    "{{EXCLUSION}}": [],
+    "stuff": "{{TARGET}}",
+    "more_stuff": {
+        "{{SITE_ID}}": "{{SITE_ID}}"
+    }
+}
