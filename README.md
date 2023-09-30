@@ -66,7 +66,7 @@ Each major device type has a device variants directory that contains a complete 
 For example, let’s say we have a customer in North Carolina with one Fleet Manager and two sites each with a single Site Controller. The only differences between the two sites are that Site 1 (Sheep Pasture Site) has a power rating of 2500 kW and has one ESS Controller while Site 2 (Wolfpack Site) has a power rating of 5000 kW and has two ESS Controllers. A majority of the Site Controller configuration files will be the same across the two sites, but certain fields may differ slightly.  Figure 2 is a visual representation of how these sites would be categorized in Variance and Figure 3 is what the `site-controller_variants/` folder might look like.
 
 **Figure 2**
-![Example Diagaram](C:\Users\Emily\Repositories\variance\example_diagram.png)
+![Example Diagaram](https://github.com/enkeefe00/variance/blob/main/example_diagram.png)
 
 **Figure 3**
 ```
